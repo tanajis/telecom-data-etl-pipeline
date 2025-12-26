@@ -1,0 +1,87 @@
+**Recommended Tech Stack:** DuckDB (staging & reporting DB), Pandas (transformation with PII anonymization), dbt (transformations), Apache Airflow (hourly orchestration), Metabase (open-source reporting), Docker Compose (containerized setup). This stack runs locally on a laptop, scales horizontally, and uses open-source tools exclusively.[1][2][3]
+
+## Step 1: Project Setup
+Create a public GitHub repo named "hg-insights-elt-pipeline" with README.md containing prerequisites (Docker, Python 3.10+), one-command setup (`docker-compose up`), and hourly run verification steps. Include dataset download script for the telecom churn CSV (~7k rows, columns like customerID, gender, phone service, tenure, churn).[4][1]
+
+Initialize folder structure:
+```
+project/
+├── docker-compose.yml
+├── data/raw/  # CSV download
+├── data/staging/  # DuckDB staging
+├── dbt_project/
+├── airflow/dags/elt_dag.py
+├── reports/  # Metabase setup
+└── README.md
+```
+
+## Step 2: Container Orchestration
+Define `docker-compose.yml` with services: Airflow (with Postgres metadata), DuckDB, dbt container, Metabase (Postgres backend). Mount volumes for data persistence. Airflow scheduler triggers hourly via `@hourly` cron in DAG. Expose ports: Airflow (8080), Metabase (3000), DuckDB CLI access.[2][5]
+
+Example services:
+```yaml
+services:
+  airflow:
+    image: apache/airflow:2.9.0
+    # ... volumes, env for hourly DAG
+  metabase:
+    image: metabase/metabase:latest
+    ports: ["3000:3000"]
+  duckdb:
+    image: duckdb/duckdb:latest
+```
+
+## Step 3: Data Ingestion (Extract/Load)
+DAG Task 1: PythonOperator downloads CSV from Kaggle (use `kaggle` CLI or direct wget if public). Load to DuckDB staging table `raw_telecom_churn` via `COPY FROM` or Pandas `to_sql`. Handle schema inference automatically. Staging table preserves raw data for auditability.[1]
+
+```python
+import duckdb
+con = duckdb.connect('staging.db')
+con.execute("CREATE TABLE IF NOT EXISTS raw_telecom_churn AS SELECT * FROM read_csv_auto('data/raw/churn.csv')")
+```
+
+## Step 4: Transformation Layer
+DAG Task 2: dbt models for cleaning/anonymization. Handle missing values: `COALESCE(tenure, 0)`, `FILLNULL(MonthlyCharges, AVG())`. Anonymize PII (customerID → SHA256 hash, no real names in dataset but generalize for phone/internet fields via hashing consistency).[6][7]
+
+dbt models:
+- `models/staging/clean_churn.sql`: Defaults + hash(customerID)
+- `models/mart/final_churn.sql`: Business logic (churn rates, aggregates)
+Run `dbt run` in Airflow BashOperator. Output to `analytics_churn` table ideal for reporting (star schema).[2]
+
+## Step 5: Orchestration Workflow
+DAG `elt_hourly_dag.py`: Tasks → `extract >> transform >> report`. Use `HourlyScheduleInterval`, retries=3, email alerts on failure. Configurable via Airflow Variables (e.g., `schedule_interval='@hourly'`). Scalable: Airflow CeleryExecutor supports Kubernetes scaling.[8][2]
+
+```python
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+dag = DAG('elt_churn', schedule_interval='@hourly', catchup=False)
+```
+
+## Step 6: Reporting Integration
+Metabase connects to DuckDB/Postgres. Pre-build dashboards: Churn rate by tenure (`SELECT AVG(churn), tenure FROM analytics_churn GROUP BY tenure`), flow stats (row counts pre/post-transform via dbt exposures). Embed Airflow logs/metrics. Generates hourly stats on pipeline health (rows processed, errors).[3][9]
+
+## Step 7: Testing & Scalability
+Local test: `docker-compose up`, verify hourly runs in Airflow UI, dashboards in Metabase. Scale: DuckDB → Postgres/Snowflake swap, Airflow → Kubernetes, dbt cloud. PII consistent hashing ensures GDPR compliance. Total setup: <30min, runs on 8GB RAM laptop.[8][2]
+
+**Delivery Timeline:** Complete repo in 24hrs: Day1 (setup+core pipeline), Day2 (reporting+docs). Push to public GitHub, invite HGI reviewers.[2]
+
+[1](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+[2](https://github.com/toludoyin/elt-batch-processing)
+[3](https://daily.dev/blog/10-best-open-source-analytics-platforms-2024)
+[4](https://www.kaggle.com/code/emineyetm/telco-customer-churn)
+[5](https://github.com/TheODDYSEY/Elt-Project)
+[6](https://stackoverflow.com/questions/48008334/anonymize-specific-columns-with-pii-in-pandas-dataframe-python)
+[7](https://towardsdatascience.com/anonymise-sensitive-data-in-a-pandas-dataframe-column-with-hashlib-8e7ef397d91f/)
+[8](https://www.reddit.com/r/dataengineering/comments/1klfl8m/looking_for_scalable_etl_orchestration_framework/)
+[9](https://www.reddit.com/r/selfhosted/comments/1c1luxi/open_source_data_visualisation_tools_on_docker/)
+[10](https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets)
+[11](https://www.kaggle.com/datasets/mosapabdelghany/telcom-customer-churn-dataset/versions/1)
+[12](https://www.sciencedirect.com/science/article/pii/S2666720723001443)
+[13](https://chaelist.github.io/docs/kaggle/customer_churn/)
+[14](https://microsoft.github.io/presidio/anonymizer/)
+[15](https://dagster.io/learn/data-pipeline-orchestration-tools)
+[16](https://www.pnrjournal.com/index.php/home/article/download/1360/1133/1672)
+[17](https://www.reddit.com/r/dataengineering/comments/1e4mfmz/project_elt_data_pipeline_using_gcp_airflow/)
+[18](https://thedigitalprojectmanager.com/tools/best-open-source-reporting-software/)
+[19](https://www.prefect.io/blog/orchestration-tools-choose-the-right-tool-for-the-job)
+[20](https://www.kaggle.com/code/redpen12/churn-prediction-in-depth-eda-and-interpretations)
