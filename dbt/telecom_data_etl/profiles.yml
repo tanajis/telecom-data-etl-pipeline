@@ -1,0 +1,12 @@
+telecom_data_etl:  # ← Add project name (matches dbt_project.yml)
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\data\staging\staging.db
+      threads: 4
+
+    prod:
+      type: duckdb
+      path: ../prod.db
+      threads: 4

@@ -1,0 +1,590 @@
+[0m23:53:29.074541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180F784AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218116AFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218116AFB10>]}
+
+
+============================== 23:53:29.098465 | 6de898f4-c76c-4eb5-8304-7bc80b5ba10e ==============================
+[0m23:53:29.098465 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:53:29.099506 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init telecom_churn', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m23:53:29.413745 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\tanaj\.dbt
+[0m23:53:29.417464 [info ] [MainThread]: Setting up your profile.
+[0m23:53:36.753960 [info ] [MainThread]: Profile default written to C:\Users\tanaj\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m23:53:36.756364 [debug] [MainThread]: Command `dbt init` succeeded at 23:53:36.755989 after 7.88 seconds
+[0m23:53:36.757878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218116B36F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180FFE1490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021811747240>]}
+[0m23:53:36.759161 [debug] [MainThread]: Flushing usage events
+[0m23:53:38.266703 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:54:40.657421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FB584AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FD4AFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FD4AFB10>]}
+
+
+============================== 23:54:40.662712 | f92b8d6e-a0ae-4342-91a7-16f9dab1e3ec ==============================
+[0m23:54:40.662712 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:54:40.663714 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt deps', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m23:54:40.992690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f92b8d6e-a0ae-4342-91a7-16f9dab1e3ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FB7ED6E0>]}
+[0m23:54:41.117034 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m23:54:41.118423 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m23:54:41.119525 [debug] [MainThread]: Command `dbt deps` succeeded at 23:54:41.119352 after 0.66 seconds
+[0m23:54:41.120062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FD317DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FD660160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226FD30FA50>]}
+[0m23:54:41.120500 [debug] [MainThread]: Flushing usage events
+[0m23:54:42.591638 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:55:16.141787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C131384AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1332B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1332B3B10>]}
+
+
+============================== 23:55:16.147646 | eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63 ==============================
+[0m23:55:16.147646 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:55:16.148751 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m23:55:16.428451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1315ED6E0>]}
+[0m23:55:16.506501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1333C5AE0>]}
+[0m23:55:16.517623 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m23:55:16.853359 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:55:16.854568 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:55:16.855267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C133383B50>]}
+[0m23:55:17.906010 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom_churn.staging
+- models.telecom_churn.marts
+[0m23:55:17.914720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C131B84E60>]}
+[0m23:55:17.962457 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m23:55:17.972153 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m23:55:18.045726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1335AB070>]}
+[0m23:55:18.046629 [info ] [MainThread]: Found 471 macros
+[0m23:55:18.047371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eeb2eedf-8f8a-4ee0-809a-23c03fcbdc63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1337BF5F0>]}
+[0m23:55:18.048956 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:55:18.049850 [debug] [MainThread]: Command end result
+[0m23:55:18.073109 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m23:55:18.075781 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m23:55:18.079949 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m23:55:18.081936 [debug] [MainThread]: Command `dbt run` succeeded at 23:55:18.081731 after 2.07 seconds
+[0m23:55:18.082382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1330CEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C133809700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1338094F0>]}
+[0m23:55:18.082831 [debug] [MainThread]: Flushing usage events
+[0m23:55:19.504687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:55:55.912622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C885884AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8877B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8877B3B10>]}
+
+
+============================== 23:55:55.917761 | c1c22146-9f4d-47e8-97df-d03bb327e5c2 ==============================
+[0m23:55:55.917761 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:55:55.919110 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run -m clean_churn', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m23:55:55.919601 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m23:55:55.920212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c1c22146-9f4d-47e8-97df-d03bb327e5c2', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8877BA3F0>]}
+[0m23:55:56.203546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1c22146-9f4d-47e8-97df-d03bb327e5c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8878C5AE0>]}
+[0m23:55:56.282143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1c22146-9f4d-47e8-97df-d03bb327e5c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C887883850>]}
+[0m23:55:56.284876 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m23:55:56.629580 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:55:56.724802 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:55:56.725244 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:55:56.725539 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:55:56.726190 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom_churn.marts
+- models.telecom_churn.staging
+[0m23:55:56.731778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1c22146-9f4d-47e8-97df-d03bb327e5c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C887BA6990>]}
+[0m23:55:56.786470 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m23:55:56.789788 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m23:55:56.814096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1c22146-9f4d-47e8-97df-d03bb327e5c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88779C9F0>]}
+[0m23:55:56.815006 [info ] [MainThread]: Found 471 macros
+[0m23:55:56.815745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1c22146-9f4d-47e8-97df-d03bb327e5c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C887D675F0>]}
+[0m23:55:56.816322 [warn ] [MainThread]: The selection criterion 'clean_churn' does not match any enabled nodes
+[0m23:55:56.819426 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:55:56.822512 [debug] [MainThread]: Command end result
+[0m23:55:56.853783 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m23:55:56.857174 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m23:55:56.861468 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m23:55:56.862298 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m23:55:56.863629 [debug] [MainThread]: Command `dbt run` succeeded at 23:55:56.863443 after 1.08 seconds
+[0m23:55:56.864109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8875CEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C887AAED00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C887AAEBA0>]}
+[0m23:55:56.865531 [debug] [MainThread]: Flushing usage events
+[0m23:55:58.223785 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:56:17.754934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7AB84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CAB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CAB3B10>]}
+
+
+============================== 23:56:17.760229 | 39c92980-49b8-4458-ae07-033f38ec7d55 ==============================
+[0m23:56:17.760229 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:56:17.761090 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run -m staging/clean_churn', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m23:56:17.761569 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m23:56:17.762208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '39c92980-49b8-4458-ae07-033f38ec7d55', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CABA3F0>]}
+[0m23:56:18.040585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39c92980-49b8-4458-ae07-033f38ec7d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CBBDAE0>]}
+[0m23:56:18.120174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39c92980-49b8-4458-ae07-033f38ec7d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CB83850>]}
+[0m23:56:18.122792 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m23:56:18.458243 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m23:56:18.553900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:56:18.554308 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:56:18.554603 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:56:18.555237 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom_churn.marts
+- models.telecom_churn.staging
+[0m23:56:18.560820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39c92980-49b8-4458-ae07-033f38ec7d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CEAA990>]}
+[0m23:56:18.611964 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m23:56:18.615205 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m23:56:18.638714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39c92980-49b8-4458-ae07-033f38ec7d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CA9C9F0>]}
+[0m23:56:18.639594 [info ] [MainThread]: Found 471 macros
+[0m23:56:18.640363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39c92980-49b8-4458-ae07-033f38ec7d55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7E0635F0>]}
+[0m23:56:18.641110 [warn ] [MainThread]: The selection criterion 'staging/clean_churn' does not match any enabled nodes
+[0m23:56:18.643849 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:56:18.647279 [debug] [MainThread]: Command end result
+[0m23:56:18.675992 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m23:56:18.679837 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m23:56:18.684113 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m23:56:18.684959 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m23:56:18.686189 [debug] [MainThread]: Command `dbt run` succeeded at 23:56:18.686014 after 1.07 seconds
+[0m23:56:18.686668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7C8CAB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CDAED00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7CDAEAF0>]}
+[0m23:56:18.687133 [debug] [MainThread]: Flushing usage events
+[0m23:56:20.081329 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:56:57.722624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB44AA4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB46AAFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB46AAFB10>]}
+
+
+============================== 23:56:57.730030 | d2eb8059-d758-4918-b99b-493a68f2c3df ==============================
+[0m23:56:57.730030 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:56:57.730832 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m23:56:57.765729 [info ] [MainThread]: Setting up your profile.
+[0m23:57:16.909062 [debug] [MainThread]: Command `dbt init` succeeded at 23:57:16.908685 after 19.40 seconds
+[0m23:57:16.910373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB46AB36F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB46B65A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB46917240>]}
+[0m23:57:16.911612 [debug] [MainThread]: Flushing usage events
+[0m23:57:18.307000 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:13.395259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB82984AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB848B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB848B3B10>]}
+
+
+============================== 00:02:13.403731 | c16f79a5-eebf-4e52-a46f-a12dab1a3698 ==============================
+[0m00:02:13.403731 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:02:13.405065 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'invocation_command': 'dbt run -m staging/clean_churn', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:02:13.405900 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:02:13.407062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB848BA3F0>]}
+[0m00:02:14.052120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB849C1AE0>]}
+[0m00:02:14.218095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84983850>]}
+[0m00:02:14.221256 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m00:02:14.775237 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m00:02:14.898024 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m00:02:14.900372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB8489BF20>]}
+[0m00:02:20.700589 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom-data-etl-pipeline.staging
+- models.telecom-data-etl-pipeline.marts
+[0m00:02:20.777778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84756C10>]}
+[0m00:02:21.070943 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:02:21.090808 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:02:21.231198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84D23C70>]}
+[0m00:02:21.232455 [info ] [MainThread]: Found 471 macros
+[0m00:02:21.263515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c16f79a5-eebf-4e52-a46f-a12dab1a3698', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84E88DD0>]}
+[0m00:02:21.265577 [warn ] [MainThread]: The selection criterion 'staging/clean_churn' does not match any enabled nodes
+[0m00:02:21.302698 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:02:21.321536 [debug] [MainThread]: Command end result
+[0m00:02:21.508985 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:02:21.517681 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:02:21.534934 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m00:02:21.536391 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:02:21.550312 [debug] [MainThread]: Command `dbt run` succeeded at 00:02:21.549992 after 8.43 seconds
+[0m00:02:21.551379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84DC3120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84D45DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84D44870>]}
+[0m00:02:21.553946 [debug] [MainThread]: Flushing usage events
+[0m00:02:23.632551 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:38.484019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB47C84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49BB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49BB3B10>]}
+
+
+============================== 00:02:38.489233 | cb135585-ba34-40ce-8290-15d917b0bce6 ==============================
+[0m00:02:38.489233 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:02:38.490052 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run -m staging/clean_churn', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:02:38.490945 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:02:38.491984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'cb135585-ba34-40ce-8290-15d917b0bce6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49BBA3F0>]}
+[0m00:02:38.802699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cb135585-ba34-40ce-8290-15d917b0bce6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49CC1AE0>]}
+[0m00:02:38.886626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cb135585-ba34-40ce-8290-15d917b0bce6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49C7F850>]}
+[0m00:02:38.889321 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m00:02:39.254843 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m00:02:39.379935 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:02:39.380640 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:02:39.381160 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:02:39.381828 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom-data-etl-pipeline.staging
+- models.telecom-data-etl-pipeline.marts
+[0m00:02:39.387604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cb135585-ba34-40ce-8290-15d917b0bce6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49FA6990>]}
+[0m00:02:39.448405 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:02:39.451797 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:02:39.477500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cb135585-ba34-40ce-8290-15d917b0bce6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49B9C9F0>]}
+[0m00:02:39.478171 [info ] [MainThread]: Found 471 macros
+[0m00:02:39.478851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb135585-ba34-40ce-8290-15d917b0bce6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB4B1635F0>]}
+[0m00:02:39.479661 [warn ] [MainThread]: The selection criterion 'staging/clean_churn' does not match any enabled nodes
+[0m00:02:39.482245 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:02:39.484687 [debug] [MainThread]: Command end result
+[0m00:02:39.511566 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:02:39.514391 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:02:39.519084 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m00:02:39.520266 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:02:39.521797 [debug] [MainThread]: Command `dbt run` succeeded at 00:02:39.521608 after 1.17 seconds
+[0m00:02:39.522366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB499CEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49EAED00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB49EAEAF0>]}
+[0m00:02:39.522904 [debug] [MainThread]: Flushing usage events
+[0m00:02:40.916548 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:04:14.386332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF91584AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF934B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF934B3B10>]}
+
+
+============================== 00:04:14.391432 | 87c6d800-d5e1-4d48-9528-5ea7df7a7e16 ==============================
+[0m00:04:14.391432 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:04:14.392296 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run -m staging/clean_churn', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:04:14.392745 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:04:14.393421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '87c6d800-d5e1-4d48-9528-5ea7df7a7e16', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF934BA3F0>]}
+[0m00:04:14.681994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '87c6d800-d5e1-4d48-9528-5ea7df7a7e16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF935C1AE0>]}
+[0m00:04:14.760799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '87c6d800-d5e1-4d48-9528-5ea7df7a7e16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF93583850>]}
+[0m00:04:14.763765 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m00:04:15.087318 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m00:04:15.182830 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:04:15.183272 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:04:15.183570 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:04:15.184179 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom-data-etl-pipeline.marts
+- models.telecom-data-etl-pipeline.staging
+[0m00:04:15.189762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '87c6d800-d5e1-4d48-9528-5ea7df7a7e16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF938B6990>]}
+[0m00:04:15.241316 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:04:15.244630 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:04:15.269086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '87c6d800-d5e1-4d48-9528-5ea7df7a7e16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF9349C9F0>]}
+[0m00:04:15.269949 [info ] [MainThread]: Found 471 macros
+[0m00:04:15.270653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87c6d800-d5e1-4d48-9528-5ea7df7a7e16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF93A735F0>]}
+[0m00:04:15.271385 [warn ] [MainThread]: The selection criterion 'staging/clean_churn' does not match any enabled nodes
+[0m00:04:15.273637 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:04:15.276052 [debug] [MainThread]: Command end result
+[0m00:04:15.304238 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:04:15.307155 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:04:15.311209 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m00:04:15.312380 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:04:15.314356 [debug] [MainThread]: Command `dbt run` succeeded at 00:04:15.314113 after 1.12 seconds
+[0m00:04:15.315125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF932CEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF937BED00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF937BEAF0>]}
+[0m00:04:15.315658 [debug] [MainThread]: Flushing usage events
+[0m00:04:16.680550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:05:48.293371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC2884AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC47B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC47B3B10>]}
+
+
+============================== 00:05:48.298151 | a79a608e-9f06-45af-ae44-20ee23940db1 ==============================
+[0m00:05:48.298151 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:05:48.299006 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run -m staging/clean_churn', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:05:48.299458 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:05:48.300152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a79a608e-9f06-45af-ae44-20ee23940db1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC47B63F0>]}
+[0m00:05:48.524886 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'telecom-data-etl-pipeline' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+[0m00:05:48.525759 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:05:48.526926 [debug] [MainThread]: Command `dbt run` failed at 00:05:48.526773 after 0.43 seconds
+[0m00:05:48.527341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC48C1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC48C1260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ADC4883850>]}
+[0m00:05:48.527734 [debug] [MainThread]: Flushing usage events
+[0m00:05:49.902527 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:07:22.442585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC1C84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC3BB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC3BB3B10>]}
+
+
+============================== 00:07:22.448687 | e73d09b4-b380-4fc7-9693-d437ee83ace8 ==============================
+[0m00:07:22.448687 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:07:22.450121 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run -m staging/clean_churn', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:07:22.450594 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:07:22.451186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e73d09b4-b380-4fc7-9693-d437ee83ace8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC3BBA3F0>]}
+[0m00:07:22.689815 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'telecom-data-etl-pipeline' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+[0m00:07:22.690665 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:07:22.691845 [debug] [MainThread]: Command `dbt run` failed at 00:07:22.691678 after 0.47 seconds
+[0m00:07:22.692318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC3CC1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC3CC1260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDC3C7F850>]}
+[0m00:07:22.692834 [debug] [MainThread]: Flushing usage events
+[0m00:07:24.106998 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:45.633525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185C9F84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185CAEB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185CAEB3B10>]}
+
+
+============================== 00:08:45.638499 | 8b577802-4fe2-4aa7-9f9a-7b4942fd02b8 ==============================
+[0m00:08:45.638499 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:08:45.639330 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run -m staging/clean_churn', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:08:45.639829 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:08:45.640933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8b577802-4fe2-4aa7-9f9a-7b4942fd02b8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185CAEBA3F0>]}
+[0m00:08:45.869920 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'telecom-data-etl-pipeline' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+[0m00:08:45.870837 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:08:45.871987 [debug] [MainThread]: Command `dbt run` failed at 00:08:45.871833 after 0.39 seconds
+[0m00:08:45.872415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185CAFC1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185CAFC1260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185CAF7F850>]}
+[0m00:08:45.872811 [debug] [MainThread]: Flushing usage events
+[0m00:08:47.286564 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:55.842395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D0D84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D2CB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D2CB3B10>]}
+
+
+============================== 00:08:55.847389 | 6e4d52d7-29a4-4ae8-be4d-4cba76b3d208 ==============================
+[0m00:08:55.847389 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:08:55.848203 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run -m clean_churn', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:08:55.848652 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:08:55.849328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6e4d52d7-29a4-4ae8-be4d-4cba76b3d208', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D2CBA3F0>]}
+[0m00:08:56.067108 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'telecom-data-etl-pipeline' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+[0m00:08:56.068104 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:08:56.069384 [debug] [MainThread]: Command `dbt run` failed at 00:08:56.069200 after 0.35 seconds
+[0m00:08:56.069870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D2DC1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D2DC1260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164D2D83850>]}
+[0m00:08:56.070316 [debug] [MainThread]: Flushing usage events
+[0m00:08:57.444031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:10:42.568911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15DA94AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15FAB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15FAB3B10>]}
+
+
+============================== 00:10:42.574212 | f6893daf-d472-4d4a-ba56-b8c7e541930a ==============================
+[0m00:10:42.574212 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:10:42.575249 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run -m clean_churn', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:10:42.575816 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:10:42.576588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f6893daf-d472-4d4a-ba56-b8c7e541930a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15FABA3F0>]}
+[0m00:10:42.798160 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'telecom-data-etl-pipeline' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+[0m00:10:42.799045 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:10:42.800137 [debug] [MainThread]: Command `dbt run` failed at 00:10:42.799981 after 0.43 seconds
+[0m00:10:42.800892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15FBC1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15FBC1260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C15FB7F850>]}
+[0m00:10:42.801893 [debug] [MainThread]: Flushing usage events
+[0m00:10:44.334005 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:11:05.531090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E56C84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58BB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58BB3B10>]}
+
+
+============================== 00:11:05.536076 | 11d2211e-bf3c-4474-b68a-3d97ff8ac0e5 ==============================
+[0m00:11:05.536076 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:11:05.536888 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run -m clean_churn', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:11:05.537678 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:11:05.539349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58BB63F0>]}
+[0m00:11:05.837087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58CC1AE0>]}
+[0m00:11:05.916339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58C7F850>]}
+[0m00:11:05.919002 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m00:11:06.274763 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m00:11:06.327292 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m00:11:06.328029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58B9BF20>]}
+[0m00:11:07.363526 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom-data-etl-pipeline.marts
+- models.telecom-data-etl-pipeline.staging
+[0m00:11:07.369371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E58A56C10>]}
+[0m00:11:07.421781 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:11:07.425232 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:11:07.449557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E5A083C70>]}
+[0m00:11:07.450311 [info ] [MainThread]: Found 471 macros
+[0m00:11:07.450933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '11d2211e-bf3c-4474-b68a-3d97ff8ac0e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E5A188DD0>]}
+[0m00:11:07.451610 [warn ] [MainThread]: The selection criterion 'clean_churn' does not match any enabled nodes
+[0m00:11:07.453209 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:11:07.454096 [debug] [MainThread]: Command end result
+[0m00:11:07.484288 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:11:07.487652 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:11:07.491926 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m00:11:07.492747 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:11:07.493913 [debug] [MainThread]: Command `dbt run` succeeded at 00:11:07.493750 after 2.09 seconds
+[0m00:11:07.494373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E5A09B120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E5A029E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E5A029DB0>]}
+[0m00:11:07.494869 [debug] [MainThread]: Flushing usage events
+[0m00:11:08.857303 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:11:55.745561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4CEB4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DDE3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DDE3B10>]}
+
+
+============================== 00:11:55.750712 | 3cc74733-ff0f-4adc-a7f5-744452b45398 ==============================
+[0m00:11:55.750712 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:11:55.751569 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'invocation_command': 'dbt run -m clean_churn', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:11:55.752059 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:11:55.752711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3cc74733-ff0f-4adc-a7f5-744452b45398', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DDEA3F0>]}
+[0m00:11:56.117614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cc74733-ff0f-4adc-a7f5-744452b45398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DEF5AE0>]}
+[0m00:11:56.198867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cc74733-ff0f-4adc-a7f5-744452b45398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DEB3850>]}
+[0m00:11:56.201515 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m00:11:56.530194 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m00:11:56.660908 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:11:56.661374 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:11:56.661688 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:11:56.662356 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.telecom-data-etl-pipeline.staging
+- models.telecom-data-etl-pipeline.marts
+[0m00:11:56.668651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cc74733-ff0f-4adc-a7f5-744452b45398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC502AE990>]}
+[0m00:11:56.746279 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:11:56.749763 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:11:56.773708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cc74733-ff0f-4adc-a7f5-744452b45398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DDCC9F0>]}
+[0m00:11:56.774464 [info ] [MainThread]: Found 471 macros
+[0m00:11:56.775082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cc74733-ff0f-4adc-a7f5-744452b45398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC504635F0>]}
+[0m00:11:56.775684 [warn ] [MainThread]: The selection criterion 'clean_churn' does not match any enabled nodes
+[0m00:11:56.778031 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:11:56.780634 [debug] [MainThread]: Command end result
+[0m00:11:56.809423 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\manifest.json
+[0m00:11:56.812261 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\semantic_manifest.json
+[0m00:11:56.817068 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\target\run_results.json
+[0m00:11:56.817960 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:11:56.819291 [debug] [MainThread]: Command `dbt run` succeeded at 00:11:56.819108 after 1.23 seconds
+[0m00:11:56.819782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC4DBFEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC501AED00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC501AEBA0>]}
+[0m00:11:56.821115 [debug] [MainThread]: Flushing usage events
+[0m00:11:58.217098 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:12:31.813626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B3FA4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B4ED3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B4ED3B10>]}
+
+
+============================== 00:12:31.818879 | 868ccc32-8525-4c13-a943-5d5d780ee4de ==============================
+[0m00:12:31.818879 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:12:31.819710 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run -m clean_churn', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\tanaj\\PycharmProjects\\telecom-data-etl-pipeline\\logs'}
+[0m00:12:31.820261 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m00:12:31.820935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '868ccc32-8525-4c13-a943-5d5d780ee4de', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B4EDA3F0>]}
+[0m00:12:32.072313 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'telecom-data-etl-pipeline' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+[0m00:12:32.073305 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:12:32.074725 [debug] [MainThread]: Command `dbt run` failed at 00:12:32.074569 after 0.40 seconds
+[0m00:12:32.075156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B60C5040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B60C5260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195B607F850>]}
+[0m00:12:32.075548 [debug] [MainThread]: Flushing usage events
+[0m00:12:33.499933 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:49:09.674863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2B4184AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2B60B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2B60B3B10>]}
+
+
+============================== 09:49:09.696095 | 64aeb8ad-ce54-4c8f-a40c-97e07fca5774 ==============================
+[0m09:49:09.696095 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:49:09.697582 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:49:09.698819 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:49:09.701135 [debug] [MainThread]: Command `dbt run` failed at 09:49:09.700862 after 0.18 seconds
+[0m09:49:09.701983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2B60BA650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2B60F95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2B4F17570>]}
+[0m09:49:09.702704 [debug] [MainThread]: Flushing usage events
+[0m09:49:11.233726 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:31:21.080793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F916584AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9184B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9184B3B10>]}
+
+
+============================== 10:31:21.086694 | e0eff646-44dc-4238-9a84-aee737a24135 ==============================
+[0m10:31:21.086694 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:31:21.087601 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m10:31:21.088186 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:31:21.090074 [debug] [MainThread]: Command `dbt run` failed at 10:31:21.089823 after 0.27 seconds
+[0m10:31:21.090874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9184B6650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9184F95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F918317570>]}
+[0m10:31:21.091456 [debug] [MainThread]: Flushing usage events
+[0m10:31:22.602670 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:10:43.353880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1CC84AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1EBB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1EBB3B10>]}
+
+
+============================== 12:10:43.359402 | 94bd9def-a468-448d-a529-7f44b80cf84d ==============================
+[0m12:10:43.359402 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:10:43.360711 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:10:43.361710 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:10:43.363028 [debug] [MainThread]: Command `dbt run` failed at 12:10:43.362865 after 0.16 seconds
+[0m12:10:43.363547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1EBBA650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1EBF95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1EA17570>]}
+[0m12:10:43.363980 [debug] [MainThread]: Flushing usage events
+[0m12:10:44.767513 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:50:49.710806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023563584AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235654B3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235654B3B10>]}
+
+
+============================== 12:50:49.735666 | f0d4b5be-7695-4ea5-bc86-dfa66cfc5ee6 ==============================
+[0m12:50:49.735666 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:50:49.737342 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tanaj\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:50:49.738547 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tanaj\PycharmProjects\telecom-data-etl-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:50:49.740596 [debug] [MainThread]: Command `dbt run` failed at 12:50:49.740234 after 0.41 seconds
+[0m12:50:49.741497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235654B6650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235654F95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023565317570>]}
+[0m12:50:49.742415 [debug] [MainThread]: Flushing usage events
+[0m12:50:51.685338 [debug] [MainThread]: An error was encountered while trying to flush usage events
