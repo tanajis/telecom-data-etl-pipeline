@@ -33,31 +33,43 @@ pip install -r requirements.txt
 
 ## 3. Install  duckdb
 
-## 4. Create Databases "staging.db" and load raw data using python script staging.py
+- Download from https://duckdb.org/install/?platform=windows&environment=cli
+- Extract to project root folder.
+
+## 4. Load Raw Data to Staging database .
+Create Databases "staging.db" and load raw data using python script staging.py
 
 ```
 py .\scripts\staging.py
 ```
-Check tables loaded:
+Check tables loaded by running below in PowerShell:
 ```
-C:\Users\tanaj\Downloads\duckdb_cli-windows-amd64\duckdb.exe data/staging/staging.db
+.\duckdb.exe data/staging/staging.db 
+
+
 select * from information_schema.tables;
 select * from raw.raw_churn limit 5;
 
 ```
 
-##  5. go to folder dbt/telecom_data_etl and  run dbt models
+##  5. Run dbt models
 ```
-
+    cd dbt/telecom_data_etl
     dbt deps
     dbt run
 ```
 
 ##  6. Check tables loaded:
+Go to project root :   
+run below commands one by one to start db in the terminal
 ```
-C:\Users\tanaj\Downloads\duckdb_cli-windows-amd64\duckdb.exe data/staging/staging.db
-select * from information_schema.tables;
+cd ../..     
+.\duckdb.exe data/staging/staging.db 
+```
 
+Run SQL Queries: 
+```
+select * from information_schema.tables;
 select * from main.dim_contract_type limit 5;
 select * from main.dim_customer limit 5;
 select * from main.dim_internet_service limit 5;
