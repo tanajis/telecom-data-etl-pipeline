@@ -12,7 +12,7 @@ Problem Statement:
 
 * Integrate any open-source reporting tool to generate statistics about the flow.
 
-* Ensure the entire setup is available through composable container definition(s).
+* Ensure the entire  setup is available through composable container definition(s).
 
 Tech Stack:
 
