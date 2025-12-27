@@ -16,8 +16,8 @@ def fetch_revenue_by_service(
             internet_service,
             sum(total_lifetime_revenue) as total_lifetime_revenue,
         FROM {table}
-        GROUP BY total_lifetime_revenue
-        ORDER BY internet_service
+        GROUP BY internet_service
+        ORDER BY internet_service ASC
     """
     df = con.execute(query).df()  # DuckDB → pandas DataFrame[web:342][web:348]
     con.close()

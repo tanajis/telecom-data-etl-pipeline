@@ -76,3 +76,11 @@ select * from main.dim_internet_service limit 5;
 select * from main.fact_customer_revenue limit 5;
 select * from main.fact_revenue_by_internet_service limit 5;
 ```
+
+
+##  7. Reporting Visualisation
+
+Exit from the databse by pressing CTL + X or C and execute below from project root directory
+```
+py .\scripts\reporting.py
+```
