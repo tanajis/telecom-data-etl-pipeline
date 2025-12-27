@@ -62,14 +62,13 @@ python3 -m venv .venv
 pip install -r requirements.txt
 ```
 
-3.install  duckdb
+## 3. Install  duckdb
 
-4. Create Databases "staging.db" and load raw data using python script staging.py
+## 4. Create Databases "staging.db" and load raw data using python script staging.py
 
 ```
 py .\scripts\staging.py
 ```
-
 Check tables loaded:
 ```
 C:\Users\tanaj\Downloads\duckdb_cli-windows-amd64\duckdb.exe data/staging/staging.db
@@ -78,14 +77,14 @@ select * from raw.raw_churn limit 5;
 
 ```
 
-5. go to folder dbt/telecom_data_etl and  run dbt models
+##  5. go to folder dbt/telecom_data_etl and  run dbt models
 ```
 
     dbt deps
     dbt run
 ```
 
-6. Check tables loaded:
+##  6. Check tables loaded:
 ```
 C:\Users\tanaj\Downloads\duckdb_cli-windows-amd64\duckdb.exe data/staging/staging.db
 select * from information_schema.tables;
