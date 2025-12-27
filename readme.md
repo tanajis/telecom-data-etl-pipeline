@@ -51,6 +51,7 @@ select * from information_schema.tables;
 select * from raw.raw_churn limit 5;
 
 ```
+![Final Chart](images/raw_table.png)
 
 ##  5. Run dbt models
 ```
@@ -77,6 +78,7 @@ select * from main.fact_customer_revenue limit 5;
 select * from main.fact_revenue_by_internet_service limit 5;
 ```
 
+![Final Chart](images/final_table_screenshot.png)
 
 ##  7. Reporting Visualisation
 
@@ -84,3 +86,5 @@ Exit from the databse by pressing CTL + X or C and execute below from project ro
 ```
 py .\scripts\reporting.py
 ```
+
+![Final Chart](images/final_chart.png)
